@@ -1,0 +1,7 @@
+{
+  "name": "chatsheet",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
