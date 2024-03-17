@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ChatSheet</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <app-list-template 
+      *ngFor="let project of listProject"  
+        [label]="project.label"
+        [name]="project.name">
+    </app-list-template>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-button routerLink="/project-add">
+    <ion-icon name="add-outline"></ion-icon>
+  </ion-button>
+</ion-footer>

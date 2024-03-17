@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Project</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen class="ion-padding"> <!-- Add padding to the content -->
+  <ion-item lines="none"> <!-- Remove the default item lines -->
+    <ion-label position="floating">Company</ion-label> <!-- Set label position to floating -->
+    <ion-input placeholder="Enter company name" [(ngModel)]="company"></ion-input> <!-- Adjust placeholder text -->
+  </ion-item>
+  <ion-item lines="none">
+    <ion-label position="floating">Project</ion-label>
+    <ion-input placeholder="Enter project name" [(ngModel)]="project" ></ion-input>
+  </ion-item>
+  <ion-button (click)="addProject()" expand="block" color="primary" class="ion-margin-top">Add</ion-button> <!-- Expand button to fill width and add margin top -->
+</ion-content>

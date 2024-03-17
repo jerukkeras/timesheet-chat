@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{project}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-list>
+    <ion-item *ngFor="let item of messageItem; let index">
+      <ion-button slot="end" [disabled]="true" >
+        {{item.message}}
+      </ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-input [(ngModel)]="messageText" placeholder="Type your message..."></ion-input>
+    <ion-button slot="end">enter</ion-button>
+  </ion-toolbar>
+</ion-footer>
