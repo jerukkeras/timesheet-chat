@@ -1,6 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>{{project}}</ion-title>
+    <ion-title>
+      <h4 style="margin-bottom: 0;">
+        <strong>
+          {{project}}
+        </strong>
+      </h4>
+      <p style="margin-top: 0;">
+        <em>
+          {{detail}}
+        </em>
+      </p>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -17,6 +28,6 @@
 <ion-footer>
   <ion-toolbar>
     <ion-input [(ngModel)]="messageText" placeholder="Type your message..."></ion-input>
-    <ion-button slot="end">enter</ion-button>
+    <ion-button slot="end" (click)="addMessage()">enter</ion-button>
   </ion-toolbar>
 </ion-footer>

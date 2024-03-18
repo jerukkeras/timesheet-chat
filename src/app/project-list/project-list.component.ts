@@ -20,7 +20,7 @@ export class ProjectListComponent  implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.projecttService.projectListSubject.unsubscribe();
+    // this.projecttService.projectListSubject.unsubscribe();
   }
 
 }
